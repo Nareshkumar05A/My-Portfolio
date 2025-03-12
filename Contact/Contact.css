@@ -1,0 +1,202 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-width: 100vw;
+    min-height: 100vh;
+}
+.contact{
+    float: left;
+    width: 50%;
+    padding: 20px;
+    
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rebeccapurple;
+    display: block;
+}
+.names input{
+    
+    margin-top: 15px;
+    height: 10rem;
+}
+.names{
+    font-size: 30px;
+   
+}
+input{
+    padding: 10px;
+    font-size: 20px;
+    display: block;
+    width: 100%;
+}
+.name{
+    padding: 10px;
+    display: block;
+    font-size: 30px;
+}
+.information{
+    float: right;
+    width: 50%;
+    
+}
+.detail .call{
+    padding: 30px;
+}
+
+img{
+    width: 40px;
+    height: 40px;
+    margin-top: 30px;
+    text-align: center;
+} */
+
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1100px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact, .information {
+    width: 50%;
+    padding: 40px;
+}
+
+.contact {
+    background-color: rebeccapurple;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+
+.contact img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.contact figcaption {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact label {
+    font-size: 18px;
+    display: block;
+    margin: 10px 0 5px;
+    text-align: left;
+    width: 100%;
+}
+
+.contact input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.names input {
+    height: 100px;
+    resize: none;
+}
+
+.submit {
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 18px;
+    background-color: #fff;
+    color: rebeccapurple;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 100%;
+}
+
+.submit:hover {
+    background: #d1c1e0;
+}
+
+.information {
+    text-align: center;
+    background: white;
+    width: 40%;
+    margin-left:40px;
+    
+}
+
+.information h2 {
+    margin-bottom: 20px;
+    color: rebeccapurple;
+}
+
+.detail .call {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.call img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.call p {
+    font-size: 18px;
+    color: #333;
+}
+
+.detail a {
+    text-decoration: none;
+    color: rebeccapurple;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contact, .information {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact label {
+        text-align: center;
+    }
+}
